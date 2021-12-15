@@ -1,0 +1,19 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "category": "front-end"
+    },
+    {
+      "id": 2,
+      "name": "Springboot",
+      "category": "back-end"
+    },
+    {
+      "name": "Python",
+      "category": "back-end",
+      "id": 3
+    }
+  ]
+}
