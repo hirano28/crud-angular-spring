@@ -1,4 +1,4 @@
-import { catchError } from 'rxjs/operators';
+import { catchError, delay } from 'rxjs/operators';
 import { ErrorDialogComponent } from './../../shared/components/error-dialog/error-dialog.component';
 import { CourseService } from './../service/course.service';
 import { Course } from './../model/course';
@@ -22,6 +22,7 @@ export class CoursesComponent implements OnInit {
     ) {
     this.courses = courseService.getAll().pipe(
       catchError(error => {
+        delay(5000)
         this.onError(error)
         return of([]);
       })

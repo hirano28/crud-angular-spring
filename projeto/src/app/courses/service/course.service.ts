@@ -14,7 +14,7 @@ export class CourseService {
   constructor(private httpClient: HttpClient) { }
 
   getAll(): Observable<Course[]> {
-    return this.httpClient.get<Course[]>('http://localhost:3000/courses').pipe(
+    return this.httpClient.get<Course[]>('http://localhost:3000/courses2').pipe(
       tap(course => {console.log(course)}),
     )
   }
