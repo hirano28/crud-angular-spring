@@ -5,12 +5,14 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import {MatTableModule} from '@angular/material/table';
+import { CategoryPipe } from './pipe/category.pipe';
 
 
 
 @NgModule({
   declarations: [
-    CoursesComponent
+    CoursesComponent,
+    CategoryPipe
   ],
   imports: [
     CommonModule,
