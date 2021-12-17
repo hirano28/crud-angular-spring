@@ -4,9 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
-import {MatTableModule} from '@angular/material/table';
-import { CategoryPipe } from './pipe/category.pipe';
-
+import { CategoryPipe } from '../shared/pipe/category.pipe';
 
 
 @NgModule({
@@ -17,7 +15,7 @@ import { CategoryPipe } from './pipe/category.pipe';
   imports: [
     CommonModule,
     CoursesRoutingModule,
-    MatTableModule
+    AppMaterialModule
   ]
 })
 export class CoursesModule { }

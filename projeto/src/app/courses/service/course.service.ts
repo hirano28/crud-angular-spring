@@ -16,10 +16,6 @@ export class CourseService {
   getAll(): Observable<Course[]> {
     return this.httpClient.get<Course[]>('http://localhost:3000/courses').pipe(
       tap(course => {console.log(course)}),
-      catchError(error => {
-        console.log('erro');
-        return of([]);
-      })
     )
   }
 }
