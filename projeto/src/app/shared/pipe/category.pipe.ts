@@ -5,8 +5,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CategoryPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(msg: string): string {
+    switch(msg) {
+      case 'front-end':
+        return 'code';
+      case 'back-end':
+        return 'computer';
+      default:
+        return 'home';
+    }
   }
 
 }
